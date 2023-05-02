@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,22 @@
 
 body{
   box-sizing: border-box;
+}
+
+body:before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.75;
+  background-image: url(./img/header_new.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
 }
 
 main{
@@ -16,15 +34,12 @@ section{
   padding: 0px 10px;
 }
 
-header figure img[alt^="logo avion"]{
-  width: 60px;
-  height: 60px;
-}
-
 header figure img[alt^="icone avatar"]{
   height: 60px;
   width: 60px;
   cursor: pointer;
+  padding :5px 8px; 
+  border-radius:5px;
 }
 
 header figure img[alt^="icone maison"]{
@@ -32,6 +47,8 @@ header figure img[alt^="icone maison"]{
   height: 35px;
   margin: 10px 0 0;
   cursor: pointer;
+  padding :5px 8px; 
+  border-radius:5px;
 }
 
 header figure img[alt^="icone bars"]{
@@ -41,27 +58,8 @@ header figure img[alt^="icone bars"]{
   cursor: pointer;
 }
 
-header figure img[alt^="icone maison2"] {
-  width: 35px;
-  height: 35px;
-  margin: 10px 0 0;
-  cursor: pointer;
-  filter: opacity(0.375) drop-shadow(0 0 0 rgb(255, 111, 0));
-}
-
-header figure img[alt^="icone avatar2"] {
-  height: 55px;
-  width: 55px;
-  cursor: pointer;
-  filter: opacity(0.375) drop-shadow(0 0 0 rgb(255, 111, 0));
-}
-
-header figure img[alt^="icone bars2"] {
-  height: 30px;
-  width: 30px;
-  margin: 10px 10px 0 0;
-  cursor: pointer;
-  filter: opacity(0.375) drop-shadow(0 0 0 rgb(255, 111, 0));
+header figure img[alt^="icone avatar"]:hover, header figure img[alt^="icone maison"]:hover{
+  background:#fff;
 }
 
 .logos-header{
@@ -103,8 +101,9 @@ nav ul{
   border-radius:5px;
   cursor:pointer;
 }
+
 #CmdMenu:hover {	
-  background:#67D7E7; 
+  background:white; 
   color: #577bac;
 }
 
@@ -165,10 +164,6 @@ border-radius: 15px;
   font-weight: bold;
   text-shadow: 1px 1px 3px #050202;
 }
-
-.page1 h1::first-letter{
-
-}  
 
 .pays {
   display: flex;
@@ -710,12 +705,16 @@ article img[alt^="logo avis client9"] {
 
 .container-formulaire{
   padding: 10px;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 fieldset{
   display: flex;
   flex-direction: column;
-  background-color: white;
+  color: black;
   width: 100%;
   border-radius: 25px;
   padding: 2rem 1rem;
@@ -775,7 +774,8 @@ main form fieldset div input:focus{
 main p, main a{
   text-align: center;
   padding: 30px 0;
-  color: grey;
+  color: black;
+  text-shadow: 0 0 15px #000000;
 }
 
 .element-formulaire img{
@@ -787,18 +787,22 @@ main p, main a{
   padding: 10px;
 }
 
+.login-page h1{
+  font-family: 'Saira Extra Condensed', sans-serif;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .container-login{
   width: 100%;
   height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 38px;
   border: 1px solid rgb(71, 71, 71);
   border-radius: 25px;
-  background-image: url(./img/wallhaven-login_mobile.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 1rem 0;
 }
 
 label{
@@ -828,7 +832,7 @@ label .password-icon i{
 
 label .password-icon:hover{
   cursor: pointer;
-  color: aqua;
+  color: black;
 }
 
 
@@ -904,7 +908,7 @@ label .password-icon:hover{
           /* Code générique footer mobile */
 
 footer{
-    background-color: #67D7E7;
+    background-color: #384547;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     height: 5vh;
@@ -916,7 +920,7 @@ footer{
 }
 
 .copyright-contact a{
-    color: black;
+  color: white;
     text-decoration: underline;
 }
 
