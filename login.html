@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/ico" href="./img/2dac9c9fe12a2e68e00170fdca71ff98.jpg">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <title>Agence de Voyage Destination Connue</title>
+</head>
+
+    <body>
+        <header>
+            <div class="logos-header">
+                <figure>
+                    <img src="./img/Logo.jpg" alt="logo avion">
+                </figure>
+                <figure>
+                    <a href="./index.html">
+                    <img src="./img/pngegg.png" alt="icone maison">
+                    </a>
+                </figure>
+                <figure>
+                    <a href="./M_login.html"><img src="./img/Pngtreeavatar_icon_profile_icon_member_5247852.png" alt="icone avatar">
+                    </a>
+                </figure>
+                <figure>
+                    <img src="./img/bars-solid.svg" alt="icone bars" title="Afficher/Masque le Menu" id="CmdMenu">
+                </figure>
+            </div>
+            <nav id="LeMenu">
+                <ul class="menu-button">
+                    <li><a href="./M_page1.html">Afrique</a></li>
+                    <li><a href="./M_page5.html">Amérique du nord</a></li>
+                    <li><a href="./M_page8.html">Amérique du sud</a></li>
+                    <li><a href="./M_page13.html">Asie</a></li>
+                    <li><a href="./M_page17.html">Europe</a></li>
+                    <li><a href="./M_page21.html">Océanie</a></li>
+                </ul>
+            </nav>
+            
+            <div class="barre-recherche">
+                <figure>
+                    <a href="./index.html"><img src="./img/pngegg.png" alt="icone maison">
+                    </a>
+                </figure>
+                <div>
+                    <label for="date">Date :</label>
+                    <input type="date" id="date" name="date" placeholder="jj/mm/aaaa">
+                </div>
+                <div>
+                    <label for="site-search">Recherche destination :</label>
+                    <select id="pays" name="pays">
+                        <optgroup label="Afrique">
+                            <option value="afrique du sud">Afrique du sud</option>
+                            <option value="maroc" href="./M_page2.html">Maroc</option>
+                            <option value="tanzanie">Tanzanie</option>
+                           </optgroup>
+                        <optgroup label="Amerique du nord">
+                            <option value="canada">Canada</option>
+                            <option value="etats-unis">Etats-Unis</option>
+                        </optgroup>
+                        <optgroup label="Amerique du sud">
+                            <option value="argentine">Argentine</option>
+                            <option value="brésil">Brésil</option>
+                            <option value="chili">Chili</option>
+                            <option value="mexique">Mexique</option>
+                          </optgroup>
+                        <optgroup label="Asie">
+                            <option value="chine">Chine</option>
+                            <option value="inde">Inde</option>
+                            <option value="japon">Japon</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="espagne">Espagne</option>
+                            <option value="france">France</option>
+                            <option value="italie">Italie</option>
+                        </optgroup>
+                        <optgroup label="Océanie">
+                            <option value="austalie">Austalie</option>
+                            <option value="fidji">Fidji</option>
+                            <option value="palaos">Palaos</option>
+                         </optgroup>
+                    </select>
+                    <button id="send-search">Recherche</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="login-page">
+            <section  class="container-login">
+                <div class="element-login">
+                    <h1>LOGIN</h1>
+                </div>
+                <div class="element-login">
+                    <input type="text" id="utilisateur" placeholder="Utilisateur">
+                </div>
+
+                <label>
+                    <div class="element-login">
+                        <input type="password" id="password" placeholder="Mot de passe" minlength="8" required>
+                    </div>
+
+                    <!--ICONES OEIL-->
+                    <div class="password-icon">
+                        <i class="bi bi-eye"></i>
+                    </div>
+                </label>
+
+                <div class="element-login">
+                    <input type="checkbox" id="remember" name="remenber" value="remember">
+                    <label for="remenber" id="remember-me">Remember me</label>
+                </div>
+                <div class="element-login">
+                    <input type="submit" value="LOGIN" id="Envoyer_login">
+                </div>                
+            </section>
+        </main>
+            
+        <footer>
+                <div class="copyright-contact">
+                    <p>@Copyright</p>
+                </div>
+                <div class="copyright-contact"></div>
+                <div class="copyright-contact">
+                    <p><a href="./M_contact.html">Contact</a></p>
+                </div> 
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>
+
