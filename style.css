@@ -71,11 +71,14 @@ header figure img[alt^="icone avatar"]:hover, header figure img[alt^="icone mais
 header nav ul li a{
   text-decoration: none;
   font-size: large;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 header nav ul li a:hover{
   text-decoration:underline;
-  font-size: larger;
+  font-size: 2rem;
 }
 
 nav ul{
@@ -836,7 +839,6 @@ label .password-icon:hover{
   color: black;
 }
 
-
 .element-login{
   height: 80px;
   z-index: 10;
@@ -914,6 +916,7 @@ footer{
     grid-template-columns: 1fr 2fr 1fr;
     height: 5vh;
     text-align: center;
+    bottom: 0;
 }
 
 .copyright-contact{
@@ -940,6 +943,24 @@ footer{
   }
   #CmdMenu { 
     display:none;
+  }
+
+  body:before{
+    background-image: none;
+  }
+
+  header{
+    background-image: url(./img/header_new.jpg);
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .container-login{
+    background-image: url(./img/wallhaven-login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.9;
   }
 }
 
@@ -1081,5 +1102,6 @@ footer{
   footer{
     width: 100%;
     font-size: 20px;
+    bottom: 0;
   }
 }
