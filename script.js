@@ -65,3 +65,46 @@ buttons.forEach(button => {
     delete activeSlide.dataset.active
   })
 })
+
+/*  fonction navbar  */
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+
+/*  function ancre continent  */
+const afrique = document.getElementById('lien-afrique')
+
+afrique.addEventListener('click', () => {
+  window.location.hash="#afrique";
+})
+
+
+const amériqueDuNord = document.getElementById('lien-amérique-du-nord')
+
+amériqueDuNord.addEventListener('click', () => {
+  window.location.hash="#amérique-du-nord";
+})
+
+
+const amériqueDuSud = document.getElementById('lien-amérique-du-sud')
+
+amériqueDuSud.addEventListener('click', () => {
+  window.location.hash="#amérique-du-sud";
+})
+
+
+const asie = document.getElementById('lien-asie')
+
+asie.addEventListener('click', () => {
+  window.location.hash="#asie";
+})
+
+
+const europe = document.getElementById('lien-europe')
+
+europe.addEventListener('click', () => {
+  window.location.hash="#europe";
+})

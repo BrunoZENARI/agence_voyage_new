@@ -11,12 +11,9 @@
     <body>
         
             <div class="container-header style-header">
-                <header>
+                <header id="home">
                     <nav>
                         <ul>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
                             <li>
                                 <a href="#destination">Destination</a>
                             </li>
@@ -33,6 +30,22 @@
         
         
         <main>
+            <nav class="navbar">
+                <div class="adc-title">ADC</div>
+                <a class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destination">Destination</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>    
+            </nav>
             <section class="summary" id="destination">
                 <div>
                     <div class="bg"></div>
@@ -41,40 +54,40 @@
                 
                 <div class="container2 class2">
                     <div id="left">
-                        <h1>Destination Connue</h1>
+                        <h1>AGENCE Destination Connue</h1>
                         <p class="description">Permettez-moi de vous présenter notre nouvelle agence de voyage, qui est résolument dédiée à vous offrir une expérience inoubliable à travers le monde. Chez <span>Destination Connue</span>, nous croyons fermement que voyager ne se limite pas à la découverte de nouvelles destinations, mais qu'il s'agit plutôt d'une aventure passionnante, remplie de moments précieux et d'opportunités de croissance personnelle.</p>
                     </div>
                     <div id="right">
                         <ul>
-                            <li>
+                            <li id="lien-afrique">
                                 <img src="./img/africa.png" alt="Afrique">
                                 <span>
                                 <strong>Afrique</strong>
                                 <p>De vastes savanes peuplées d'animaux majestueux ! </p>
                                 </span>
                             </li>
-                            <li> 
+                            <li id="lien-amérique-du-nord"> 
                                 <img src="./img/north-america.png" alt="Amérique du nord">
                                 <span>
                                 <strong>Amérique du Nord</strong>
                                 <p>Partez à la découverte des vastes parcs nationaux!</p>
                                 </span>
                             </li>
-                            <li> 
+                            <li id="lien-amérique-du-sud"> 
                                 <img src="./img/latin-america.png" alt="Amérique du sud">
                                 <span>
                                 <strong>Amérique du Sud</strong>
                                 <p>Plongez au cœur de l'Amazonie, le poumon vert de la planète !</p>
                                 </span>
                             </li>
-                            <li> 
+                            <li id="lien-asie"> 
                                 <img src="./img/asie_carte.png" alt="Asie">
                                 <span>
                                 <strong>Asie</strong>
                                 <p>Un monde de traditions millénaires, de paysages et de saveurs exquises!</p>
                                 </span>
                             </li>
-                            <li> 
+                            <li id="lien-europe"> 
                                 <img src="./img/european-union.png" alt="Europe">
                                 <span>
                                 <strong>Europe</strong>
@@ -87,7 +100,7 @@
             </section>
             
             <section class="page1">
-                <h1>Afrique</h1>
+                <h1 id="afrique">Afrique</h1>
                 <div class="offers">
                     <article class="section2">
                         <a href="#maroc">
@@ -147,8 +160,8 @@
                 </div>   
             </section>
 
-            <section class="page2" id="maroc">
-                <h1>Maroc</h1>
+            <section class="page2">
+                <h1 id="maroc">Maroc</h1>
                 <h2>Venez découvrir le Maroc</h2>
                 <div class="descriptif">
                     <h3>
@@ -174,26 +187,283 @@
                 </div>
 
                 <article>
-                <div class="arguments">
-                     <h4>Vous aimerez:</h4>
-                        <p>
-                            L’atmosphère feutrée de votre riad, une adresse secrète dans la médina
-                            L’énergie de Marrakech, la richesse de l’artisanat et, à portée de
-                            main, la Palmeraie et les couleurs de l'Atlas.
-                            Les secrets des métiers de la médina et un cours de cuisine chez
-                            l'habitant en privé: C’est prévu.
-                            Transferts privés, conciergerie sur place, bonnes adresses.
-                        </p>
-                    
+                    <div class="arguments">
+                            <h4>Vous aimerez:</h4>
+                            <p>
+                                L’atmosphère feutrée de votre riad, une adresse secrète dans la médina
+                                L’énergie de Marrakech, la richesse de l’artisanat et, à portée de
+                                main, la Palmeraie et les couleurs de l'Atlas.
+                                Les secrets des métiers de la médina et un cours de cuisine chez
+                                l'habitant en privé: C’est prévu.
+                                Transferts privés, conciergerie sur place, bonnes adresses.
+                            </p>
+                            <h3>TARIF : 1999€ / pers</h3>
+                    </div>
+                    <div class="container-avis-reserv">
+                        <div class="element-avis-reserv">
+                            <label for="date">Date :</label>
+                            <input type="date" id="date" name="date" placeholder="jj/mm/aaaa">
+                        </div>
+                        <div class="element-avis-reserv">
+                            <button class="button-page" type="submit">Réserver</button>
+                        </div>
+                        <div class="logo-avis element-avis-reserv">
+                            <a href="#"><img src="img/avis-client.png" alt="logo avis client2" /></a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="page2">
+                <h1 id="tanzanie">Tanzanie</h1>
+                <h2>Venez découvrir le Tanzanie</h2>
+                <div class="descriptif">
+                    <h3>
+                        Le temps d’un voyage en Tanzanie,<br>
+                        Partir à la rencontre d’un continent et d’un océan !
+                    </h3>
                 </div>
-                <h3>TARIF : 1999€ / pers</h3>
-                <div class="logo-avis boutton">
-                <a href="#"><img src="img/avis-client.png" alt="logo avis client2" /></a>
-                <button class="boutton-page2" type="submit">Réservation selon date</button>
+
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">&#10594</button>
+                    <button class="carousel-button next" data-carousel-button="next">&#10596</button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="./img/tanzanie_plage_zanzibar.jpg" alt="plage_de_zanzibar">
+                        </li>
+                        <li class="slide">
+                            <img src="./img/tanzanie_guepard.jpg" alt="guepard">
+                        </li>
+                        <li class="slide">
+                            <img src="./img/tanzanie_kilimanjaro.jpg" alt="volcan_du_kilimanjaro">
+                        </li>
+                    </ul>
                 </div>
-            </article>
+
+                <article>
+                    <div class="arguments">
+                            <h4>Vous aimerez:</h4>
+                            <p>
+                                L'infinie variété de paysages et de reliefs classés au patrimoine de l’humanité.
+                                Sur l’océan Indien, l’archipel de Zanzibar et ses plages somptueuses.
+                                Une faune sauvage à couper le souffle.
+                                Au sommet du continent africain, les neiges éternelles du mont Kilimanjaro.
+                                Le spectacle de l’aube tout en nuances orangées. <br>
+                                Découvrez toutes nos idées de voyage en Tanzanie.
+                            </p>
+                            <h3>TARIF : 2999€ / pers</h3>
+                    </div>
+                    <div class="container-avis-reserv">
+                        <div class="element-avis-reserv">
+                            <label for="date">Date :</label>
+                            <input type="date" id="date" name="date" placeholder="jj/mm/aaaa">
+                        </div>
+                        <div class="element-avis-reserv">
+                            <button class="button-page" type="submit">Réserver</button>
+                        </div>
+                        <div class="logo-avis element-avis-reserv">
+                            <a href="#"><img src="img/avis-client.png" alt="logo avis client2" /></a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="page2">
+                <h1 id="afrique-du-sud">Afrique du sud</h1>
+                <h2>Venez découvrir l'afrique du sud</h2>
+                <div class="descriptif">
+                    <h3>
+                        Fôret, savane, plage, montagne, désert et la diversité d'animaux<br>
+                        font de l'Afrique du Sud une destination très complète.
+                    </h3>
+                </div>
+
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">&#10594</button>
+                    <button class="carousel-button next" data-carousel-button="next">&#10596</button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="./img/afrique_du_sud_lion.jpg" alt="lion_avec_son_lionceau">
+                        </li>
+                        <li class="slide">
+                            <img src="./img/afrique_du_sud_montagnes.jpg" alt="montagnes_en_afrique_du_sud">
+                        </li>
+                        <li class="slide">
+                            <img src="./img/afrique_du_sud_stade.jpg" alt="cap_town_stadium">
+                        </li>
+                    </ul>
+                </div>
+
+                <article>
+                    <div class="arguments">
+                            <h4>Vous aimerez:</h4>
+                            <p>
+                                Une Afrique du Sud plus authentique, loin des itinéraires plus classiques, 
+                                un road-trip rythmé, dans un pays où nature et culture suscitent à tout âge curiosité et fascination.
+                                Combinez nature, culture et détente au cours d’un voyage spectaculaire, surprenant,émouvant
+                                et venez faire la rencontre des Big Five.
+                            </p>
+                            <h3>TARIF : 3999€ / pers</h3>
+                    </div>
+                    <div class="container-avis-reserv">
+                        <div class="element-avis-reserv">
+                            <label for="date">Date :</label>
+                            <input type="date" id="date" name="date" placeholder="jj/mm/aaaa">
+                        </div>
+                        <div class="element-avis-reserv">
+                            <button class="button-page" type="submit">Réserver</button>
+                        </div>
+                        <div class="logo-avis element-avis-reserv">
+                            <a href="#"><img src="img/avis-client.png" alt="logo avis client2" /></a>
+                        </div>
+                    </div>
+                </article>
+            </section>
             
-        
+            <section class="page1">
+                <h1 id="amérique-du-nord">Amérique du Nord</h1>
+                <div class="offers">
+                    <article class="section2">
+                        <a href="#canada">
+                            <div class="grid pays">
+                                <div class="container-pays img-wrapper">
+                                    <img class="zoom" src="img/villes-amerique-du-nord.png" alt="paysage Canada">
+                                    <div class="content fade">
+                                        <h2>Canada</h2>
+                                        <ul>
+                                            <li>Vaste</li>
+                                            <li>Chaleureux</li>
+                                            <li>Multiculturel</li>
+                                            <li>Paysages</li>
+                                        </ul>
+                                    </div>   
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="section3">
+                        <a href="#usa">  
+                            <div class="grid pays">
+                                <div class="container-pays img-wrapper">
+                                    <img class="zoom" src="img/usa_pont_golden_gate.jpg" alt="pont_du_golden_gate_au_usa">
+                                    <div class="content fade">
+                                        <h2>Etats-Unis</h2>
+                                        <ul>
+                                            <li>Attractions</li>
+                                            <li>Diversité</li>
+                                            <li>Cinéma</li>
+                                            <li>Culture</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>     
+                    </article>
+                </div>   
+            </section>
+
+            <section class="page2">
+                <h1 id="canada">Canada</h1>
+                <h2>Venez découvrir le Canada</h2>
+                <div class="descriptif">
+                    <h3>
+                        Un voyage au Canada est une invitation permanente au road-trip. <br>
+                        Un terrain de jeu qui s’étend d’un océan à l’autre.
+                    </h3>
+                </div>
+
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">&#10594</button>
+                    <button class="carousel-button next" data-carousel-button="next">&#10596</button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="./img/canada-montreal.jpg" alt="montreal">
+                        </li>
+                        <li class="slide">
+                            <img src="./img/canada-lac-emeraude.jpg" alt="lac emeraude">
+                        </li>
+                        <li class="slide">
+                            <img src="./img/canada-ontario.jpg" alt="ontario">
+                        </li>
+                    </ul>
+                </div>
+
+                <article>
+                    <div class="arguments">
+                            <h4>Vous aimerez:</h4>
+                            <p>
+                                Des falaises de Terre-Neuve jusqu’aux forêts de l’île de Vancouver, des milliers de kilomètres de paysages inouïs.
+                                Ce pays aux nombreuses “terres lointaines” déploie des richesses naturelles propices
+                            </p>
+                            <h3>TARIF : 4999€ / pers</h3>
+                    </div>
+                    <div class="container-avis-reserv">
+                        <div class="element-avis-reserv">
+                            <label for="date">Date :</label>
+                            <input type="date" id="date" name="date" placeholder="jj/mm/aaaa">
+                        </div>
+                        <div class="element-avis-reserv">
+                            <button class="button-page" type="submit">Réserver</button>
+                        </div>
+                        <div class="logo-avis element-avis-reserv">
+                            <a href="#"><img src="img/avis-client.png" alt="logo avis client2" /></a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="page2">
+                <h1 id="usa">Etats-Unis</h1>
+                <h2>Venez découvrir les Etats-Unis</h2>
+                <div class="descriptif">
+                    <h3>
+                        50 États et des milliers de voyages à faire aux USA,<br>
+                        Tous ont un point commun, celui de nous projeter dans l’écran.
+                    </h3>
+                </div>
+
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">&#10594</button>
+                    <button class="carousel-button next" data-carousel-button="next">&#10596</button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="./img/usa_capitol.jpg" alt="Le_capitol">
+                        </li>
+                        <li class="slide">
+                            <img src="./img/usa_monument-valley.jpg" alt="monument_valley">
+                        </li>
+                        <li class="slide">
+                            <img src="./img/usa_statue_de_la_libertee.jpg" alt="Statue_de_la_libertee">
+                        </li>
+                    </ul>
+                </div>
+
+                <article>
+                    <div class="arguments">
+                            <h4>Vous aimerez:</h4>
+                            <p>
+                                Partir pour un road-movie au Far West, la majesté de Monument Valley et le Grand Canyon.
+                        Le musée de la Pop Culture, l'observation des baleines, la dégustation de vin dans la Napa Valley, le Golden Gate Bridge à vélo.
+                        Rallier en train quatre grandes dames de la côte Est, qui façonnent l'histoire et le nouveau visage des USA.
+                            </p>
+                            <h3>TARIF : 5999€ / pers</h3>
+                    </div>
+                    <div class="container-avis-reserv">
+                        <div class="element-avis-reserv">
+                            <label for="date">Date :</label>
+                            <input type="date" id="date" name="date" placeholder="jj/mm/aaaa">
+                        </div>
+                        <div class="element-avis-reserv">
+                            <button class="button-page" type="submit">Réserver</button>
+                        </div>
+                        <div class="logo-avis element-avis-reserv">
+                            <a href="#"><img src="img/avis-client.png" alt="logo avis client2" /></a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
         </main>
 
         <footer class="footer-page2">
