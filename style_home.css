@@ -9,6 +9,10 @@
     padding: 0;
   }
 
+  html{
+    scroll-behavior: smooth !important;
+  }
+
 main{
     margin: 0;
     padding: 0;
@@ -17,6 +21,10 @@ main{
 
 section{
     margin: 0;
+}
+
+#scrollUp{
+  display: none;
 }
 
 .style-header{
@@ -821,6 +829,19 @@ button{
         padding: 8rem 0 5rem;
         font-size: 4rem;
     }
+
+    #scrollUp{
+      display: block;
+      position: fixed;
+      right: 10px;
+      bottom : 10px;
+      opacity: 0.6;
+      z-index: 2;
+      }
+      #scrollUp img{
+          border-radius: 25px;
+          width: 50px;
+      }
 
     .offers{
         display: flex;
