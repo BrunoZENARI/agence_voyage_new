@@ -108,3 +108,15 @@ const europe = document.getElementById('lien-europe')
 europe.addEventListener('click', () => {
   window.location.hash="#europe";
 })
+
+/* fonction réduction taille header suivant le scroll  */
+const nav = document.querySelector('.container-header');
+
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 50) {
+      nav.classList.add('scrollDown');
+  }
+  else{
+      nav.classList.remove('scrollDown');
+  }
+})
